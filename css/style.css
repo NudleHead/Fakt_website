@@ -1,0 +1,290 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    /* background-color: #213769 !important; */
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: magenta;
+
+} */
+
+
+/* .navbar ul {
+    margin-right: 10% !important;
+
+} */
+.navbar {
+
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.mb-5 {
+    margin-bottom: 0px !important;
+}
+
+.navbar-nav>li {
+    font-size: 20px;
+}
+
+#whoare h3 {
+    color: #213769;
+    margin-left: 7%;
+    margin-top: 10%;
+}
+
+#whoare p {
+    margin: 7%;
+    font-size: 18px;
+
+}
+
+/* #faktimg img {
+    box-shadow: 15px 15px 10px -15px #000000;
+} */
+
+
+
+
+
+.flip-card {
+    width: 80%;
+    height: 300px;
+    perspective: 1000px;
+    margin-top: 6%;
+    margin-left: 10%;
+
+
+
+
+}
+
+@media screen and (max-width:991px) {
+    #szkolenia .flip-card-2 {
+        width: 80%;
+        left: 0;
+        margin-left: 10%;
+    }
+
+    #trenerzy {
+        margin-left: 5% !important;
+    }
+
+    #filmy {
+        margin-left: 10% !important;
+    }
+
+    .space h2 {
+        line-height: 64px !important;
+    }
+}
+
+.flip-card-2 {
+    position: relative;
+    width: 40%;
+    height: 300px;
+    perspective: 1000px;
+    margin-top: 6%;
+    left: 30%;
+    /* margin-left: 10%; */
+
+
+}
+
+.flip-card-inner {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s, ease-in-out 0.6s;
+    transform-style: preserve-3d;
+
+
+}
+
+.flip-card-front::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1px;
+    width: 25%;
+    border-top: 2px solid magenta;
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+}
+
+.flip-card-2:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+}
+
+/* @media only screen and (min-width:1200px) {
+    #first {
+        margin-top: 6%;
+    }
+} */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.flip-card-front {
+    background-color: white;
+    color: #213769;
+    text-align: center;
+    font-size: 2.5vh;
+    line-height: 300px;
+}
+
+
+.flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+
+    overflow: auto;
+}
+
+.flip-card-back p {
+    padding: 10%;
+}
+
+.flip-card-back h4 {
+    padding: 10% 10% 0 10%;
+}
+
+.space {
+    width: 100%;
+    height: 11%;
+    background-color: #213769;
+    box-shadow: 0 8px 6px -8px black inset, 0 -8px 6px -8px black inset;
+}
+
+.space h2 {
+    color: white;
+    line-height: 87px;
+    margin-left: 5%;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.profile-card {
+    margin-left: 10%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+    width: 70%;
+    /* height: 500px; */
+
+
+}
+
+
+.profile-card-inner {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s, ease-in-out 0.6s;
+    transform-style: preserve-3d;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+
+
+}
+
+.profile-card-front,
+.profile-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+.profile-card-front img {
+    padding: 1.5vh;
+    /* width: 100%;
+    height: 90%; */
+
+}
+
+.profile-card-front figcaption {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1vh;
+    font-size: 2.5vh;
+    position: absolute;
+    background-color: white !important;
+}
+
+.profile-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.profile-card-back p {
+    padding: 20% 10% 10% 10%;
+    font-size: 2vh;
+}
+
+.profile-card-front {
+    background-color: white;
+}
+
+.profile-card:hover .profile-card-inner {
+    transform: rotateY(-180deg);
+}
+
+#filmy .col-lg-4 iframe {
+    margin-top: 10%;
+}
+
+
+#kontakt .col-lg-4 p {
+    font-size: 30px;
+}
